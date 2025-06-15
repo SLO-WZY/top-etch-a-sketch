@@ -1,0 +1,45 @@
+body {
+    background-color: #999999;
+    max-width: 1026px;
+    margin: auto
+    
+}
+.content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.Pickers {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px
+}
+.gridBorder {
+    border: 3px solid black;
+    width: 1024px;
+    height: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    
+}
+
+.colorpicker button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin: 3px;
+  cursor: pointer;
+  outline: 2px solid transparent;
+  transition: outline 0.5s ease;
+  border-radius: 4px;
+}
+
+.colorpicker button:hover {
+  outline: 2px solid #555;
+}
+
+.colorpicker button.selected {
+  outline: 2px solid #000;
+}
+
