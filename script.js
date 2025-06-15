@@ -7,7 +7,7 @@ const colors = document.querySelectorAll(".colorpicker button")
 colors.forEach(color => {
     color.addEventListener("click", () => {
         if (color.dataset.color != "custom") {selectedColor = color.dataset.color}
-        else {const userColor = prompt("Input a color eg. 12A1FF")
+        else {const userColor = prompt("Input a color eg. 12A1FF [0-9, a-f] 6 chars")
             selectedColor = `#${userColor}`
         }
         
