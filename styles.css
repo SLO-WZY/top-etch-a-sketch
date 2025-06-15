@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: Roboto;
+    
+}
+
 body {
     background-color: #999999;
     max-width: 1026px;
@@ -23,8 +29,7 @@ body {
     background-color: white;
     
 }
-
-.colorpicker button {
+button {
   width: 30px;
   height: 30px;
   border: none;
@@ -35,11 +40,39 @@ body {
   border-radius: 4px;
 }
 
-.colorpicker button:hover {
+.buttons button {
+    width: auto;
+}
+
+button:hover {
   outline: 2px solid #555;
 }
 
-.colorpicker button.selected {
+button.selected {
   outline: 2px solid #000;
 }
 
+a {
+    color: #1111BB;
+    text-decoration: none;
+}
+
+.customColor {
+    background: red;
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+    0% { background-color: red; }
+  20% { background-color: orange; }
+  40% { background-color: yellow; }
+  60% { background-color: green; }
+  80% { background-color: blue; }
+  100% { background-color: violet; }
+}
+
+footer {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+}
